@@ -1,0 +1,203 @@
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+    min-height: 100%;
+    min-width: 700px;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+}
+
+  ::-webkit-input-placeholder { color:#d9d9d9; font-family: Roboto;font-weight: 100;}
+  ::-moz-placeholder { color:#d9d9d9; font-family: Roboto;font-weight: 100;}
+  :-ms-input-placeholder { color:#d9d9d9; font-family: Roboto;font-weight: 100;}
+  :-moz-placeholder { color:#d9d9d9; font-family: Roboto;font-weight: 100;}
+
+/* false-pages */
+  .wrapper:before{
+    bottom: -5px;
+    left: 2px;
+    right: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .wrapper:after{
+    bottom: -9px;
+      left: 6px;
+      right: 6px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+    .wrapper:before, .wrapper:after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+  }
+  /* false-pages */
+
+
+
+/* header-title */
+
+.header-title {
+    text-align: center;
+    color: #ead7d8;
+    font-weight: 100;
+    font-size: 90px;
+}
+/* header-title */
+
+
+/* to do-list */
+
+.wrapper {
+    width: 600px;
+    background: white;
+    box-shadow: 0 1px 11px 1px rgba(0, 0, 0, .4);
+     margin: 80px auto;
+     position: relative;
+}
+
+.roster-header-note{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+button.roster-header-btn{
+  position: relative;
+  cursor: pointer;
+  color:#e6e6e6;
+padding-left: 10px;
+background: none;
+border: none;
+font: 1.5em 'FontAwesome';
+top: 0;
+bottom: 0;
+margin: auto;
+outline: none;/*рамка chrome*/
+}
+
+.roster-header-question{
+  border: none;
+  font-style: italic;
+  font-size: 22px;
+  padding: 20px;
+  width:84%;
+  outline: none;/*рамка chrome*/
+}
+
+.list-item {
+    position: relative;
+    padding-left: 10px;
+    border-top: 1px solid #ededed;
+}
+
+.item-txt{
+  font-size: 23px;
+      font-weight:300;
+      margin-left: 35px;
+      padding: 17px ;
+      cursor: pointer;
+}
+.item-txt:focus {
+  box-shadow: inset 0 0 7px rgba(152,152,152,0.9);
+    outline: none;
+}
+.item-checkbox {
+    display: none;
+}
+.item-check{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.item-checkbox:checked~.item-check:after {
+    position:relative;
+    content: '\2714';
+    color: #6dc9b9;
+    border-color: #cde3df;
+    font-size: 25px;
+  }
+
+  .item-checkbox:checked ~ .item-txt{
+    color: #d9d9d9;
+    text-decoration: line-through;
+}
+
+.item-close {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    top:18px;
+    color: #b05b5f;
+    visibility: hidden;
+    cursor: pointer;
+    outline: none; /*рамка chrome*/
+  }
+  .list-item:hover .item-close {
+    visibility: visible;
+}
+
+/* to do-list */
+
+
+/* Section-footer */
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #CCC;
+    color: #898888;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-title {
+    float: left;
+}
+
+.footer-purification {
+    float: right;
+}
+
+.footer-nav, .footer-purification {
+    display: inline-block;
+}
+
+button.footer-link, button.footer-btn {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #898888;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-link:hover, .footer-link.active, .footer-btn:hover {
+    border-color: #ead7d8;
+}
+/* Section-footer */

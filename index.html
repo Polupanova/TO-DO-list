@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="Font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- title-to do list- start -->
+    <div class="header-container">
+        <h1 class="header-title">todos</h1>
+    </div>
+    <!-- title-to do list- end -->
+
+    <!-- to-do-list - start -->
+    <section class="wrapper">
+            <div class="roster-box">
+                <div class="roster-header-note">
+                    <button class="roster-header-btn">
+              <i class="fa fa-chevron-down"></i>
+            </button>
+                    <input class="roster-header-question" placeholder="What needs to be done?">
+                </div>
+
+                <div class="roster-list">
+
+                  <div class="list-item">
+                    <input type="checkbox" id="item-1" class="item-checkbox">
+                    <label for="item-1" class="item-check"></label>
+                    <div class="item-txt" tabindex="0">Buy milk</div>
+                    <button class="item-close"><i class="fa fa-close"></i></button>
+                </div>
+
+                <div class="list-item">
+                  <input type="checkbox" id="item-2" class="item-checkbox" checked>
+                  <label for="item-2" class="item-check"></label>
+                  <div class="item-txt" tabindex="0">Prepare the report</div>
+                  <button class="item-close"><i class="fa fa-close"></i></button>
+                </div>
+
+                <div class="list-item">
+                  <input type="checkbox" id="item-3" class="item-checkbox">
+                  <label for="item-3" class="item-check"></label>
+                  <div class="item-txt" tabindex="0">Call Mr. Smyth</div>
+                  <button class="item-close"><i class="fa fa-close"></i></button>
+                </div>
+
+                <div class="list-item">
+                  <input type="checkbox" id="item-4" class="item-checkbox">
+                  <label for="item-4" class="item-check"></label>
+                <div class="item-txt" tabindex="0">Pick up dress from the dry cleaner</div>
+                  <button class="item-close"><i class="fa fa-close"></i></button>
+                </div>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-title">
+                        3 items left
+                    </div>
+                    <nav class="footer-nav">
+                        <button class="footer-link active">All</button>
+                        <button class="footer-link">Active</button>
+                        <button class="footer-link">Completed</button>
+                    </nav>
+                    <div class="footer-purification">
+                        <button class="footer-btn">Clear completed</button>
+                    </div>
+                </div>
+              </div>
+    </section>
+    <!-- to-do-list - end -->
+</body>
+
+</html>
